@@ -1,0 +1,187 @@
+:root{
+    --colorazul: #1877f2;
+    --colorverde: #42b72a;
+    --colormain: #f0f2f5;
+    --colorwhite: #ffffff;
+    --colortext: #282a2d;
+    --colorline: #e7e9ec;
+    --colorlinks: #4b67a1;
+    --colorborde: #dddfe2;
+    --colorplace: #949496;
+    --colorcopy: #848484;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1, h2{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.padding-main{
+    padding: 72px 0 112px 0;
+}
+.bg{
+    background-color: var(--colormain);
+}
+.bold{
+    font-weight: bold;
+    color: var(--colortext);
+}
+.bold:hover{
+    text-decoration: underline;
+}
+.contenedor{
+    width: 980px;
+    margin: 0 auto;
+}
+.pd_20{
+    padding: 20px 0;
+}
+.dos-columnas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3.2rem;
+}
+.contenedor-logo{
+    width: 548px;
+    height: 182.05px;
+    padding: 112px 0 16px 0;
+}
+.logo{
+    width: 301.067px;
+    height: 106px;
+    margin: -28px;
+}
+.eslogan{
+    width: 500px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    color: var(--colortext);
+}
+.shadow{
+    box-shadow: 0 5px 12px #cccccc;
+}
+.card{
+    width: 396px;
+    height: 349.817px;
+    background-color: var(--colorwhite);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 0 24px 0;
+    margin-top: 40px;
+}
+.card input[type="text"], input[type="password"]{
+    display: inline-block;
+    width: 364px;
+    height: 52px;
+    padding: 14px 16px;
+    margin: 6px 0;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid var(--colorborde);
+}
+.card input[type="text"]::placeholder, input[type="password"]::placeholder{
+    color: var(--colorplace);
+    font-size: 17px;
+}
+.card input[type="text"]:focus, .card input[type="password"]:focus{
+    border: 1px solid var(--colorazul);
+    box-shadow: 0 0 2px var(--colorazul);
+}
+.card input[type="submit"]:focus{
+    border: 1px solid var(--colorazul);
+    box-shadow: 0 0 3px var(--colorazul);
+}
+.btn-blue{
+    width: 364px;
+    height: 48px;
+    border-radius: 6px;
+    border: none;
+    margin: 10px 0 16px 0;
+    padding: 0px 10px;
+    background-color: var(--colorazul);
+    font-size: 20px;
+    color: var(--colorwhite);
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-blue:hover{
+    background-color: #1c73e4;
+}
+.link{
+    color: var(--colorazul);
+    font-size: 14px;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.line{
+    height: 1px;
+    border-top: 1px solid var(--colorborde);
+    margin: 21px 16px 26px 16px;
+}
+.btn-green{
+    display: inline-block;
+    width: 189.75px;
+    height: 48px;
+    padding: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: var(--colorverde);
+    color: var(--colorwhite);
+}
+.btn-green:hover{
+    background-color: #3ca826;
+}
+.info{
+    grid-column: 2/3 ;
+    font-size: 14px;
+    text-align: center;
+    color: var(--colortext);
+    margin: 27px 0 0 -4px;
+    line-height: 20px;
+}
+.links{
+    padding-top: 8px;
+}
+.links a{
+    color: var(--colorcopy);
+    font-size: 12px;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.links li{
+    display: inline-block;
+    padding-right: 15px;
+}
+.line-fo{
+    height: 1px;
+    border-top: 1px solid var(--colorborde);
+    margin: 8px 0 0 0;
+}
+.copy{
+    margin: 25px 0;
+    font-size: 11px;
+    color: var(--colorcopy);
+}
